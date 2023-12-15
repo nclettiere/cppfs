@@ -20,7 +20,7 @@ class AbstractFileSystem;
 class FileIterator;
 class FileVisitor;
 class Tree;
-class FileWatcher;
+//class FileWatcher;
 
 
 /**
@@ -510,7 +510,7 @@ public:
     *    To watch more than one directory at a time, use FileWatcher and add.
     *    Avoid creating more than one FileWatcher, as OS limits can be reached.
     */
-    FileWatcher watch(unsigned int events = FileCreated | FileRemoved | FileModified | FileAttrChanged, RecursiveMode recursive = Recursive);
+    //FileWatcher watch(unsigned int events = FileCreated | FileRemoved | FileModified | FileAttrChanged, RecursiveMode recursive = Recursive);
 
     /**
     *  @brief

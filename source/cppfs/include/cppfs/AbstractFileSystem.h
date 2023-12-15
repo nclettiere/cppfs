@@ -64,7 +64,7 @@ public:
     *  @return
     *    Watcher backend (must NOT be null!)
     */
-    virtual std::unique_ptr<AbstractFileWatcherBackend> createFileWatcher(FileWatcher & fileWatcher) = 0;
+    //virtual std::unique_ptr<AbstractFileWatcherBackend> createFileWatcher(FileWatcher & fileWatcher) = 0;
 };
 
 

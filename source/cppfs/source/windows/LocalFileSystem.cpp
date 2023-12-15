@@ -3,7 +3,7 @@
 
 #include <cppfs/FileHandle.h>
 #include <cppfs/windows/LocalFileHandle.h>
-#include <cppfs/windows/LocalFileWatcher.h>
+//#include <cppfs/windows/LocalFileWatcher.h>
 
 
 namespace cppfs
@@ -32,12 +32,12 @@ FileHandle LocalFileSystem::open(std::string && path)
     );
 }
 
-std::unique_ptr<AbstractFileWatcherBackend> LocalFileSystem::createFileWatcher(FileWatcher & fileWatcher)
-{
-    return std::unique_ptr<AbstractFileWatcherBackend>(
-            new LocalFileWatcher(&fileWatcher, shared_from_this())
-    );
-}
+//std::unique_ptr<AbstractFileWatcherBackend> LocalFileSystem::createFileWatcher(FileWatcher & fileWatcher)
+//{
+//    return std::unique_ptr<AbstractFileWatcherBackend>(
+//            new LocalFileWatcher(&fileWatcher, shared_from_this())
+//    );
+//}
 
 
 } // namespace cppfs
